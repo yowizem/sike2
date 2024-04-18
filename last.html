@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website ni Yowizem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #151515;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        div {
+            text-align: center;
+            color: white;
+        }
+
+        img {
+            position: absolute;
+            top: 5%; /* Adjust the top position relative to the viewport height */
+            left: 50%; /* Center the image horizontally */
+            transform: translateX(-50%); /* Center the image horizontally */
+            max-width: 90%; /* Make the image responsive */
+            max-height: 60%; /* Limit the image height to 60% of the viewport height */
+        }
+
+        .no-button {
+            position: absolute;
+            bottom: 5%; /* Adjust the bottom position relative to the viewport height */
+            left: 50%; /* Center the button horizontally */
+            transform: translateX(-50%); /* Center the button horizontally */
+            background-color: #F8EEDA;
+            color: black;
+            height: 8%; /* Set button height relative to the viewport height */
+            width: 15%; /* Set button width relative to the viewport width */
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.5vw; /* Set font size responsive to viewport width */
+        }
+        
+        /* Media query for smaller screens */
+        @media screen and (max-width: 768px) {
+            .no-button {
+                height: 10%; /* Adjust button height for smaller screens */
+                width: 20%; /* Adjust button width for smaller screens */
+                font-size: 2vw; /* Adjust font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="last.jpg" height="300" width="300" alt="">
+    <div>
+        <h1>Lato tayong sausage (:</h1>
+        <a href="yes.html"><button style="background-color: #F8EEDA;color: black;height: 50px;width: 100px;font-family: 'Times New Roman', Times, serif;font-size: large;"> Yes </button></a>      
+        <a href="index.html"><button class="no-button"> No </button></a>
+    </div>
+</body>
+</html>
